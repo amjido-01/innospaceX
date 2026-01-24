@@ -1,4 +1,4 @@
-import { Cpu, Lock, Play, Sparkles, Zap } from "lucide-react";
+import { Play } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
 export default function ContentSection() {
@@ -14,7 +14,7 @@ export default function ContentSection() {
           </p>
         </div>
         <img
-          className="rounded-(--radius) h-[550px] object-cover mx-auto w-[1050px]"
+          className="rounded-(--radius) h-137.5 object-cover mx-auto w-262.5"
           src="/who.jpg"
           alt="team image"
           height=""
@@ -23,7 +23,7 @@ export default function ContentSection() {
         />
 
         <div className=" max-w-4xl text-center mx-auto">
-            <p className="text-[#09121D] leading-[38px] text-[20px] font-normal">At InnospaceX, we inspire curiosity, drive technological growth, and support innovators of all ages and backgrounds. Through 21st-century skills and creative problem-solving, we empower individuals to become independent thinkers, creators, and leaders of tomorrow. We are also dedicated to delivering superior service that consistently meets and exceeds customer expectations. Our commitment to excellence ensures a remarkable experience for every client.</p>
+            <p className="text-[#09121D] leading-9.5 text-[20px] font-normal">At InnospaceX, we inspire curiosity, drive technological growth, and support innovators of all ages and backgrounds. Through 21st-century skills and creative problem-solving, we empower individuals to become independent thinkers, creators, and leaders of tomorrow. We are also dedicated to delivering superior service that consistently meets and exceeds customer expectations. Our commitment to excellence ensures a remarkable experience for every client.</p>
         </div>
 
         <div className="relative mx-auto flex flex-col md:flex-row justify-between items-center gap-y-6">
@@ -57,7 +57,7 @@ export default function ContentSection() {
               className="text-white bg-[#E68E40] w-8 h-8 p-1 border2 bg[#E68E40] rounded-full flex items-center justify-center textxl"
               strokeWidth={2.5}
             />
-            <span className="text-orange-400 font-semibold leading-[36px] text-[20px]">
+            <span className="text-orange-400 font-semibold leading-9 text-[20px]">
               See How We Work
             </span>
           </div>

@@ -3,16 +3,6 @@ import { Link } from "@tanstack/react-router";
 import { Menu, MoveRight, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import React from "react";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from "@/components/ui/navigation-menu";
 import NavigationMenuDemo from "./navigation-menu-demo";
 
 const menuItems = [
@@ -35,7 +25,7 @@ export const HeroHeader = () => {
           {/* Grid layout for large screens */}
           <div className="relative flex flex-wrap items-center justify-between py-3 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-center lg:py-4">
             {/* LEFT COLUMN — Logo */}
-            <div className="flex items-center justify-between lg:justify-start">
+            <div className="flex items-center w-full px-2 justify-between lg:justify-start">
               <Link
                 to="/"
                 aria-label="home"

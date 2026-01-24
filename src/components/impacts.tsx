@@ -1,0 +1,136 @@
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import {
+  MoveRight,
+  Globe,
+  LayoutDashboard,
+  Bot,
+  Rocket,
+  SearchCheck,
+} from "lucide-react";
+import { Button } from "./ui/button";
+import type { ReactNode } from "react";
+
+const badges = [
+  { icon: SearchCheck, label: "All" },
+  { icon: Globe, label: "Web apps" },
+  { icon: LayoutDashboard, label: "Mobile apps" },
+  { icon: Bot, label: "Robotics" },
+  { icon: Rocket, label: "Startups" },
+];
+
+const cardData = [
+  {
+    title: "Webtray",
+    description:
+      "Extensive customization options, allowing you to tailor every aspect to meet your specific needs.",
+    image: "/p2.jpg",
+    lable: "Web app",
+  },
+  {
+    title: "Simkash",
+    image: "/p3.jpg",
+    description:
+      "From design elements to functionality, you have complete control to create a unique and personalized experience.",
+    lable: "Mobile app",
+  },
+  {
+    title: "Powered By AI",
+    description:
+      "Elements to functionality, you have complete control to create a unique experience.",
+    image: "/p1.jpg",
+    lable: "Robotics",
+  },
+];
+
+export default function Impacts() {
+  return (
+    <section className="bg-zinc-50 mt-[94px] border-t py16 md:py32 dark:bg-transparent">
+      <div className="@container mx-auto max-w-6xl px6">
+        {/* Header Section */}
+        <div className="text-center">
+          <h2 className="text-balance text-[42px] md:text-[52px] text-[#09121D] font-bold leading-tight tracking-tight">
+            Our Impact
+          </h2>
+          <p className="mt-6 text-[#09121D]/80 text-[16px] max-w-xl mx-auto">
+            Discover how our team, students and startups are building creative
+            tech solutions.
+          </p>
+        </div>
+
+        {/* Badges Section */}
+        <div className="mt-10 flex flex-wrap justify-center gap-4 md:gap-6">
+          {badges.map((badge, index) => {
+            const Icon = badge.icon;
+            const isAll = badge.label === "All";
+
+            return (
+              <div
+                key={index}
+                className={`inline-flex items-center gap-2 px-5 py-2 border rounded-full shadow-sm hover:shadow-md transition
+          ${
+            isAll
+              ? "bg-[#333333] border-[#09121D] text-white"
+              : "bg-white border-[#09121D] text-[#09121D]"
+          }
+        `}
+              >
+                <Icon
+                  className={`w-4 h-4 ${isAll ? "text-white" : "text-[#09121D]"}`}
+                  strokeWidth={2.5}
+                />
+                <span className="font-medium text-[15px]">{badge.label}</span>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Cards Section */}
+        <div className="mx-auto mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {cardData.map((card, index) => (
+            <Card
+              key={index}
+              className="group h[500px] overflow-hidden border border-zinc-200 shadow-none hover:shadow-lg transition duration-300"
+            >
+              <CardHeader className="px-4">
+                <img
+                  src={card.image}
+                  alt={card.title}
+                  className="h-[340px] w-full object-cover rounded-lg"
+                />
+              </CardHeader>
+
+              <CardContent className="px-4">
+                <div
+                  key={index}
+                  className="inline-flex items-center gap-2 px-5 py-2 border border-[#09121D] rounded-full bg-white shadow-sm hover:shadow-md transition"
+                >
+                  <span className="text-[#09121D] font-medium text-[15px]">
+                    {card.lable}
+                  </span>
+                </div>
+                <h3 className="text-xl font-semibold mt-3 text-[#09121D]">
+                  {card.title}
+                </h3>
+                <p className="mt-2 text-[15px] font-medium leading-[19.07px] text-[#333333]">
+                  {card.description}
+                </p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+const CardDecorator = ({ children }: { children: ReactNode }) => (
+  <div className="mask-radial-from-40% mask-radial-to-60% relative mx-auto size-36 duration-200 [--color-border:color-mix(in_oklab,var(--color-zinc-950)10%,transparent)] group-hover:[--color-border:color-mix(in_oklab,var(--color-zinc-950)20%,transparent)] dark:[--color-border:color-mix(in_oklab,var(--color-white)15%,transparent)] dark:group-hover:[--color-border:color-mix(in_oklab,var(--color-white)20%,transparent)]">
+    <div
+      aria-hidden
+      className="absolute inset-0 bg-[linear-gradient(to_right,var(--color-border)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-border)_1px,transparent_1px)] bg-[size:24px_24px] dark:opacity-50"
+    />
+    <div className="bg-background absolute inset-0 m-auto flex size-12 items-center justify-center border-l border-t">
+      {children}
+    </div>
+  </div>
+);

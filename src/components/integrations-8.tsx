@@ -2,10 +2,10 @@ import { Gemini, Replit, GooglePaLM, MagicUI } from "@/components/logos";
 import { Button } from "@/components/ui/button";
 import { Link } from "@tanstack/react-router";
 import { Sparkles } from "lucide-react";
-
+import { ServiceBox } from "./service-box";
 export default function IntegrationsSection() {
   return (
-    <section className="w-full bg-gradient-to-r from-[#FFE5D1] to-[#D3EAF7] py-24">
+    <section className="w-full bg-linear-to-r from-[#FFE5D1] to-[#D3EAF7] py-24">
       <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12 px-6">
         {/* LEFT CONTENT */}
         <div className="flex flex-col justify-between">
@@ -33,7 +33,7 @@ export default function IntegrationsSection() {
             <Button
               asChild
               size="lg"
-              className="px-[70px] border-2 text-[22px] font-bold border-white bg-[#E68E40] text-base"
+              className="px-17.5 border-2 text-[22px] font-bold border-white bg-[#E68E40] text-base"
             >
               <Link to="/">
                 <span className="text-nowrap text-white">Get Started</span>
@@ -74,27 +74,3 @@ export default function IntegrationsSection() {
     </section>
   );
 }
-
-const ServiceBox = ({
-  icon,
-  name,
-  description,
-}: {
-  icon: React.ReactNode;
-  name: string;
-  description: string;
-}) => {
-  return (
-    <div className="rounded-2xl border bg-white p-6 shadow-sm hover:shadow-md transition-all">
-      <div className="w-12 h-12 border-2 bg[#E68E40] rounded-full flex items-center justify-center text-white text-xl">
-        {icon}
-      </div>
-
-      <h3 className="mt-4 text-[24px] leading-[26px] font-semibold">{name}</h3>
-
-      <p className="mt-2 text-[16px] font-normal text-[#000000] leading-[26px]">
-        {description}
-      </p>
-    </div>
-  );
-};
