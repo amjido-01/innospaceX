@@ -82,7 +82,7 @@ export default function HeroSection() {
           </div>
         </section>
         <section className="bg-background pb-16 md:pb-32 mt-9.75">
-          <div className="group relative m-auto max-w-6xl px6">
+          <div className="group relative m-auto max-w-6xl px-2">
             <div className="flex flex-col items-center md:flex-row">
               {/* TEXT CONTAINER */}
               <div className="md:max-w-95 md:pr6 md:border-r border-muted">

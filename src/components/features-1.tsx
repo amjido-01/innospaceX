@@ -51,9 +51,9 @@ const cardData = [
 export default function Features() {
   return (
     <section className="bg-zinc-50 border-t py16 md:py32 dark:bg-transparent">
-      <div className="@container mx-auto max-w-6xl px6">
+      <div className="@container mx-auto max-w-6xl px-2">
         {/* Header Section */}
-        <div className="text-center">
+        <div className="md:text-center">
           <h2 className="text-balance text-[42px] md:text-[52px] text-[#09121D] font-bold leading-tight tracking-tight">
             Join Our Exceptional Programs
           </h2>

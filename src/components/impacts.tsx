@@ -7,7 +7,7 @@ import {
   Rocket,
   SearchCheck,
 } from "lucide-react";
-import { Button } from "./ui/button";
+// import { Button } from "./ui/button";
 import type { ReactNode } from "react";
 
 const badges = [
@@ -20,17 +20,17 @@ const badges = [
 
 const cardData = [
   {
-    title: "Webtray",
+    title: "InnospaceX",
     description:
-      "Extensive customization options, allowing you to tailor every aspect to meet your specific needs.",
-    image: "/p2.jpg",
+      "Empowering The Next Generation of Innovators",
+    image: "/innospace.png",
     lable: "Web app",
   },
   {
     title: "Simkash",
-    image: "/p3.jpg",
+    image: "/simkash.png",
     description:
-      "From design elements to functionality, you have complete control to create a unique and personalized experience.",
+      "All-in-one SIM & Payments Platform",
     lable: "Mobile app",
   },
   {
@@ -44,14 +44,14 @@ const cardData = [
 
 export default function Impacts() {
   return (
-    <section className="bg-zinc-50 mt-[94px] border-t py16 md:py32 dark:bg-transparent">
-      <div className="@container mx-auto max-w-6xl px6">
+    <section className="bg-zinc-50 mt-23.5 border-t py16 md:py32 dark:bg-transparent">
+      <div className="@container mx-auto max-w-6xl px-2">
         {/* Header Section */}
-        <div className="text-center">
+        <div className="md:text-center">
           <h2 className="text-balance text-[42px] md:text-[52px] text-[#09121D] font-bold leading-tight tracking-tight">
             Our Impact
           </h2>
-          <p className="mt-6 text-[#09121D]/80 text-[16px] max-w-xl mx-auto">
+          <p className="mt-2 text-[#09121D]/80 text-[16px] max-w-xl mx-auto">
             Discover how our team, students and startups are building creative
             tech solutions.
           </p>

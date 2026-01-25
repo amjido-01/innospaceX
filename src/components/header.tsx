@@ -57,12 +57,15 @@ export const HeroHeader = () => {
             {/* RIGHT COLUMN — Login Buttons */}
             <div className="hidden lg:flex justify-end items-center space-x-3">
               <Button
+                asChild
                 variant="link"
                 size="lg"
                 className="text-[#E68E40] font-bold text-[18px] p-0 leading-[100%] flex items-center gap-2"
               >
-                <MoveRight className="text-[#E68E40] w-5 h-5" strokeWidth={3} />
-                Contact
+                <Link to="/contact">
+                  <MoveRight className="text-[#E68E40] w-5 h-5" strokeWidth={3} />
+                  Contact
+                </Link>
               </Button>
             </div>
 

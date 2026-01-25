@@ -53,45 +53,45 @@ const programs: { title: string; href: string; description: string; icon: string
   },
 ]
 
-const products: { title: string; href: string; description: string; icon: string }[] = [
+const products: { title: string; href: string; description: string; image: string }[] = [
   {
     title: "WEBTRAY",
-    href: "/products/webtray",
-    description: "HTML, CSS, JavaScript for Beginners",
-    icon: "🌐",
+    href: "https://webtray.ng",
+    description: "WebTray is the all-in-one SaaS platform for restaurants and retail shops. Manage inventory, create your online store, and grow your business with ease. ",
+    image: "webtray.png",
   },
   {
-    title: "Inno Build",
-    href: "/products/inno-build",
-    description: "PHP & MySQL, Node.js, Python for Beginners",
-    icon: "🏗️",
+    title: "Saudi-innovate",
+    href: "https://saudinnov2-0-vite.vercel.app/",
+    description: "Driving Innovation in Media Production and Content Creation",
+    image: "saudi.png",
   },
   {
-    title: "InnospaceX",
-    href: "/products/innospacex",
-    description: "Android, Flutter for beginners",
-    icon: "🚀",
+    title: "Learnoch",
+    href: "https://learnoch.com/",
+    description: "The personalized AI learning platform",
+    image: "/learnoch.png",
   },
 ]
 
-const community: { title: string; href: string; description: string; icon: string }[] = [
+const community: { title: string; href: string; description: string; image: string }[] = [
   {
-    title: "WEBTRAY",
+    title: "EArewa",
     href: "/community/webtray",
-    description: "HTML, CSS, JavaScript for Beginners",
-    icon: "🌐",
-  },
-  {
-    title: "Inno Build",
-    href: "/community/inno-build",
-    description: "PHP & MySQL, Node.js, Python for Beginners",
-    icon: "🏗️",
+    description: "Arewa tech",
+    image: "who.jpg",
   },
   {
     title: "InnospaceX",
+    href: "/community/inno-build",
+    description: "Empowering The Next Generation of Innovators",
+    image: "team.jpg",
+  },
+  {
+    title: "Mata-afasaha",
     href: "/community/innospacex",
-    description: "Android, Flutter for beginners",
-    icon: "🚀",
+    description: "Women in tech",
+    image: "guide.jpg",
   },
 ]
 
@@ -102,9 +102,9 @@ export function NavigationMenuDemo() {
     <NavigationMenu viewport={isMobile}>
       <NavigationMenuList className="flex-wrap ">
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Programs</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="rounded">Programs</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[700px]">
+            <ul className="grid gap-3 p-4 md:w-125 md:grid-cols-2 lg:w-175">
               {programs.map((program) => (
                 <ProgramItem
                   key={program.title}
@@ -120,15 +120,15 @@ export function NavigationMenuDemo() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Products</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="rounded">Products</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-4 md:w-[600px] md:grid-cols-3 lg:w-[750px]">
+            <ul className="grid gap-3 p-4 md:w-150 md:grid-cols-3 lg:w-187.5">
               {products.map((product) => (
                 <ProductItem
                   key={product.title}
                   title={product.title}
                   href={product.href}
-                  icon={product.icon}
+                  image={product.image}
                 >
                   {product.description}
                 </ProductItem>
@@ -138,15 +138,15 @@ export function NavigationMenuDemo() {
         </NavigationMenuItem>
         
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Community</NavigationMenuTrigger>
+          <NavigationMenuTrigger className=" rounded">Community</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-4 md:w-[600px] md:grid-cols-3 lg:w-[750px]">
+            <ul className="grid gap-3 p-4 md:w-150 md:grid-cols-3 lg:w-187.5">
               {community.map((item) => (
                 <ProductItem
                   key={item.title}
                   title={item.title}
                   href={item.href}
-                  icon={item.icon}
+                  image={item.image}
                 >
                   {item.description}
                 </ProductItem>
@@ -200,9 +200,9 @@ function ProductItem({
   title,
   children,
   href,
-  icon,
+  image,
   ...props
-}: React.ComponentPropsWithoutRef<"li"> & { href: string; icon: string }) {
+}: React.ComponentPropsWithoutRef<"li"> & { href: string; image: string }) {
   return (
     <li {...props}>
       <NavigationMenuLink asChild>
@@ -212,7 +212,9 @@ function ProductItem({
         >
           <div className="space-y-2">
             <div className="flex h-32 w-full items-center justify-center rounded-lg bg-gray-400 text-3xl">
-              {icon}
+              <img 
+              src={image}
+              />
             </div>
             <div>
               <div className="text-sm font-bold leading-tight mb-1">{title}</div>

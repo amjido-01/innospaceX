@@ -5,17 +5,17 @@ import { Mail, SendHorizonal } from "lucide-react";
 export default function CallToActionThree() {
   return (
    <section className="py-16 md:py-32 bg-linear-to-b from-[#FFF4EA] to-[#FFD9B3]">
-      <div className="mx-auto max-w-5xl px-6">
-        <div className="text-center">
-          <h2 className="text-balance text-4xl font-semibold lg:text-5xl">
+      <div className="mx-auto max-w-5xl px-2">
+        <div className="md:text-center">
+          <h2 className="text-balance text-2xl md:text-4xl font-semibold lg:text-5xl">
             Sign up for our weekly Newsletters
           </h2>
-          <p className="mt-4 w-1/2 text-center mx-auto">
+          <p className="mt-4 md:w-1/2 md:text-center mx-auto">
             Get the latest updates on programs, events, and tech
             opportunities—delivered straight to your inbox.
           </p>
 
-          <form action="" className="mx-auto mt-8 w-[90%]">
+          <form action="" className="mx-auto mt-8 md:w-[90%]">
             <div className="bg-background has-[input:focus]:ring-muted relative grid grid-cols-[1fr_auto] items-center rounded-sm border pr-3 shadow shadow-zinc-950/5 has-[input:focus]:ring-2">
               <Mail className="text-caption pointer-events-none absolute inset-y-0 left-5 my-auto size-5" />
 
@@ -26,7 +26,7 @@ export default function CallToActionThree() {
               />
             </div>
 
-            <div className="mt-12 flex flex-wrap justify-center gap-4">
+            <div className="mt-6 md:mt-12 flex flex-wrap justify-center gap-4">
               <Button
                 asChild
                 size="lg"

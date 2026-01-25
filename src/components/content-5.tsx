@@ -4,8 +4,8 @@ import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 export default function ContentSection() {
   return (
     <section className="py-16 md:py-32 bg-[#FAFAFA]">
-      <div className="mx-auto max-w-6xl space-y-8 px-6 md:space-y-12">
-        <div className="mx-auto max-w-xl space--6 text-center md:space-y12">
+      <div className="mx-auto max-w-6xl space-y-8 px-2 md:space-y-12">
+        <div className="mx-auto max-w-xl space--6 md:text-center md:space-y12">
           <h2 className="font-bold text-black tracking-tight text-4xl md:text-5xl leading-tight">
             Who We Are
           </h2>
