@@ -9,7 +9,7 @@ const menuItems = [
   { name: "Programs", href: "#link" },
   { name: "Products", href: "#link" },
   { name: "Community", href: "#link" },
-  { name: "Our Hub", href: "#link" },
+  { name: "Ou Hub", href: "/our-hub" },
 ];
 
 export const HeroHeader = () => {
@@ -21,7 +21,7 @@ export const HeroHeader = () => {
         data-state={menuState && "active"}
         className="bg-background/50 fixed z-20 w-full border-b backdrop-blur-3xl"
       >
-        <div className="mx-auto max-w-6xl px6 transition-all duration-300">
+        <div className="mx-auto max-w-6xl transition-all duration-300">
           {/* Grid layout for large screens */}
           <div className="relative flex flex-wrap items-center justify-between py-3 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-center lg:py-4">
             {/* LEFT COLUMN — Logo */}

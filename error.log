@@ -1,0 +1,10 @@
+src/components/call-to-action-three.tsx(3,16): error TS6133: 'SendHorizonal' is declared but its value is never read.
+src/components/contact-form.tsx(6,3): error TS6133: 'FieldDescription' is declared but its value is never read.
+src/components/contact-form.tsx(8,3): error TS6133: 'FieldLabel' is declared but its value is never read.
+src/components/contact-form.tsx(9,3): error TS6133: 'FieldSeparator' is declared but its value is never read.
+src/components/features-1.tsx(2,34): error TS6133: 'Settings2' is declared but its value is never read.
+src/components/features-1.tsx(2,55): error TS6133: 'Zap' is declared but its value is never read.
+src/components/features-1.tsx(122,7): error TS6133: 'CardDecorator' is declared but its value is never read.
+src/components/footer.tsx(1,1): error TS6133: 'Logo' is declared but its value is never read.
+src/components/impacts.tsx(3,3): error TS6133: 'MoveRight' is declared but its value is never read.
+src/components/impacts.tsx(126,7): error TS6133: 'CardDecorator' is declared but its value is never read.

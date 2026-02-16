@@ -4,6 +4,7 @@ import { HeroHeader } from "./header";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { ProgressiveBlur } from "@/components/ui/progressive-blur";
 import { Sparkles } from "lucide-react";
+import { motion } from "motion/react";
 
 export default function HeroSection() {
   return (
@@ -16,8 +17,33 @@ export default function HeroSection() {
 "
           >
             <div className="relative mx-auto px-2 md:px-0 flex max-w-6xl flex-col md:flex-row px6 lgblock">
-              <div className="mxauto max-w-lg text-start sm:text-left md:text-left lg:ml-0 lg:w-1/2 ">
-                <div className="inline-flex items-center gap-2 px-4 py-2 border border-orange-300 rounded-full bg-white w-fit">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={{
+                  hidden: { opacity: 0 },
+                  visible: {
+                    opacity: 1,
+                    transition: {
+                      staggerChildren: 0.1,
+                      delayChildren: 0.2,
+                    },
+                  },
+                }}
+                className="mxauto max-w-lg text-start sm:text-left md:text-left lg:ml-0 lg:w-1/2 "
+              >
+                <motion.div
+                  variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    visible: {
+                      opacity: 1,
+                      y: 0,
+                      transition: { duration: 0.5, ease: "easeOut" },
+                    },
+                  }}
+                  className="inline-flex items-center gap-2 px-4 py-2 border border-orange-300 rounded-full bg-white w-fit"
+                >
                   <Sparkles
                     className="w-4 h-4 text-orange-400"
                     strokeWidth={2.5}
@@ -25,17 +51,52 @@ export default function HeroSection() {
                   <span className="text-orange-400 font-medium text-sm">
                     Welcome to InnovspaceX
                   </span>
-                </div>
+                </motion.div>
 
-                <h1 className="mt-4 max-w-2xl text-[#09121D] tracking-[-4%] text-balance text-[42px] font-bold lg:text-6xl lg:mt16 xl:text-7xl leading-11.5 md:leading-[100%] lg:leading-[66.74px]">
+                <motion.h1
+                  variants={{
+                    hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
+                    visible: {
+                      opacity: 1,
+                      y: 0,
+                      filter: "blur(0px)",
+                      transition: { duration: 0.6, ease: "easeOut" },
+                    },
+                  }}
+                  className="mt-4 max-w-2xl text-[#09121D] tracking-[-4%] text-balance text-[42px] font-bold lg:text-6xl lg:mt16 xl:text-7xl leading-11.5 md:leading-[100%] lg:leading-[66.74px]"
+                >
                   Empowering The Next Generation of Innovators
-                </h1>
-                <p className="mt-3.5 lg:mt-6 max-w-2xl lg:w-100 lg:leading-8 text-pretty text-[16px] text-[#09121D] lg:text-[24px]">
+                </motion.h1>
+                <motion.p
+                  variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    visible: {
+                      opacity: 1,
+                      y: 0,
+                      transition: { duration: 0.6, ease: "easeOut" },
+                    },
+                  }}
+                  className="mt-3.5 lg:mt-6 max-w-2xl lg:w-100 lg:leading-8 text-pretty text-[16px] text-[#09121D] lg:text-[24px]"
+                >
                   We empower individuals to learn and innovate, and help
                   organizations grow through digital solutions.
-                </p>
+                </motion.p>
 
-                <div className="mt-7.75 md:mt-4.5 lg:mt-13 flex justify-start flexcol items-center mdjustify-center gap-2 sm:flex-row lg:justify-start">
+                <motion.div
+                  variants={{
+                    hidden: { opacity: 0, scale: 0.9 },
+                    visible: {
+                      opacity: 1,
+                      scale: 1,
+                      transition: {
+                        type: "spring",
+                        stiffness: 200,
+                        damping: 20,
+                      },
+                    },
+                  }}
+                  className="mt-7.75 md:mt-4.5 lg:mt-13 flex justify-start flexcol items-center mdjustify-center gap-2 sm:flex-row lg:justify-start"
+                >
                   <Button
                     asChild
                     size="lg"
@@ -47,36 +108,57 @@ export default function HeroSection() {
                       </span>
                     </Link>
                   </Button>
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
 
               <div className="mt-7.5 md:mt-0 grid grid-cols-2 border2 gap-3 grid-rows-2 h-fit md:h-full">
                 {/* Top left - VR image */}
-                <div className="col-span-1 row-span-2">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9, filter: "blur(10px)" }}
+                  whileInView={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
+                  className="col-span-1 row-span-2"
+                >
                   <img
                     src="/vr.jpg"
                     alt="Person wearing VR headset with purple lighting"
                     className="w-75.25 sm:w-100 md:w-75.25 h-full object-cover rounded-3xl"
                   />
-                </div>
+                </motion.div>
 
                 {/* Top right - Workspace image */}
-                <div className="col-span-1 row-span-1">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9, filter: "blur(10px)" }}
+                  whileInView={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.4 }}
+                  whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
+                  className="col-span-1 row-span-1"
+                >
                   <img
                     src="/team.jpg"
                     alt="Overhead view of workspace with laptops and tech"
                     className="w-75.25 sm:w-100 md:w-75.25 h-full object-cover rounded-3xl"
                   />
-                </div>
+                </motion.div>
 
                 {/* Bottom right - Team image */}
-                <div className="col-span-1 row-span-1">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9, filter: "blur(10px)" }}
+                  whileInView={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.6 }}
+                  whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
+                  className="col-span-1 row-span-1"
+                >
                   <img
                     src="/children.jpg"
                     alt="People working together on tech project"
                     className="w-75.25 h-full sm:w-100 md:w-75.25 object-cover rounded-3xl"
                   />
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>

@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "@tanstack/react-router";
-import { Mail, SendHorizonal } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export default function CallToActionThree() {
   return (
-   <section className="py-16 md:py-32 bg-linear-to-b from-[#FFF4EA] to-[#FFD9B3]">
+    <section className="py-16 md:py-32 bg-linear-to-b from-[#FFF4EA] to-[#FFD9B3]">
       <div className="mx-auto max-w-5xl px-2">
         <div className="md:text-center">
           <h2 className="text-balance text-2xl md:text-4xl font-semibold lg:text-5xl">
@@ -34,7 +34,7 @@ export default function CallToActionThree() {
               >
                 <Link to="/">
                   <span className="text-nowrap text-[#FFFFFF]">
-                    Subscribe Now 
+                    Subscribe Now
                   </span>
                 </Link>
               </Button>

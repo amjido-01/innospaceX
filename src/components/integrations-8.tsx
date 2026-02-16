@@ -5,7 +5,7 @@ import { Sparkles } from "lucide-react";
 import { ServiceBox } from "./service-box";
 export default function IntegrationsSection() {
   return (
-    <section className="w-full bg-linear-to-r from-[#FFE5D1] to-[#D3EAF7] py-24">
+    <section className="w-full py-24">
       <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12 px-2">
         {/* LEFT CONTENT */}
         <div className="flex flex-col justify-between">

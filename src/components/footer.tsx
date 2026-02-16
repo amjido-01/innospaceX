@@ -1,4 +1,3 @@
-import { Logo } from "@/components/logo";
 import { Link } from "@tanstack/react-router";
 
 const links = [
@@ -32,7 +31,11 @@ export default function FooterSection() {
   return (
     <footer className="py-16 md:py-32">
       <div className="mx-auto max-w-5xl px-6">
-        <Link to="/" aria-label="home" className="flex items-center justify-center space-x-2">
+        <Link
+          to="/"
+          aria-label="home"
+          className="flex items-center justify-center space-x-2"
+        >
           <img src="/logo.png" alt="Tailark Logo" className="h-10 w-auto" />
         </Link>
         <div className="my-8 flex flex-wrap justify-center gap-6 text-sm">

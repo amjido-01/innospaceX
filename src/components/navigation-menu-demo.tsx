@@ -157,7 +157,7 @@ export function NavigationMenuDemo() {
 
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link to="/">Our Hub</Link>
+            <Link to="/our-hub">Our Hub</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
