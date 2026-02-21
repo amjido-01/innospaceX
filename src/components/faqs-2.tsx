@@ -6,7 +6,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Link } from "@tanstack/react-router";
 
 export default function FAQsTwo() {
   const faqItems = [
