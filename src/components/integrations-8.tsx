@@ -47,25 +47,25 @@ export default function IntegrationsSection() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <ServiceBox
               icon={<Gemini />}
-              name="Services 1"
+              name="Mentorship"
               description="A little description for it’s just a lorem ipsum yeah"
             />
 
             <ServiceBox
               icon={<Replit />}
-              name="Services 2"
+              name="Software Development"
               description="A little description for it’s just a lorem ipsum yeah"
             />
 
             <ServiceBox
               icon={<GooglePaLM />}
-              name="Services 3"
+              name="Academic"
               description="A little description for it’s just a lorem ipsum yeah"
             />
 
             <ServiceBox
               icon={<MagicUI />}
-              name="Services 4"
+              name="Tech Hub"
               description="A little description for it’s just a lorem ipsum yeah"
             />
           </div>

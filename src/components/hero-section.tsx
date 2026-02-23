@@ -183,8 +183,8 @@ export default function HeroSection() {
                   <div className="flex">
                     <img
                       className="mx-auto h-5 w-fit dark:invert"
-                      src="https://html.tailus.io/blocks/customers/nvidia.svg"
-                      alt="Nvidia Logo"
+                      src="/asibiti.png"
+                      alt="asibiti.ng Logo"
                       height="20"
                       width="auto"
                     />
@@ -192,8 +192,8 @@ export default function HeroSection() {
                   <div className="flex">
                     <img
                       className="mx-auto h-4 w-fit dark:invert"
-                      src="https://html.tailus.io/blocks/customers/column.svg"
-                      alt="Column Logo"
+                      src="/mata.png"
+                      alt="mata a fasaha"
                       height="16"
                       width="auto"
                     />
@@ -201,8 +201,8 @@ export default function HeroSection() {
                   <div className="flex">
                     <img
                       className="mx-auto h-4 w-fit dark:invert"
-                      src="https://html.tailus.io/blocks/customers/github.svg"
-                      alt="GitHub Logo"
+                      src="/logo.png"
+                      alt="innospacex"
                       height="16"
                       width="auto"
                     />

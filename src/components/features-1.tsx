@@ -3,47 +3,47 @@ import { Atom, MoveRight, Radio, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
 
 const badges = [
-  { icon: Radio, label: "Online classes" },
   { icon: Sparkles, label: "Physical classes" },
+  { icon: Radio, label: "Online classes" },
   { icon: Atom, label: "Hybrid classes" },
 ];
 
 const cardData = [
   {
-    title: "Customizable",
+    title: "Web development",
     description:
-      "Extensive customization options, allowing you to tailor every aspect to meet your specific needs.",
+      "Master the art of building high-performance, responsive websites using the latest industry-standard frameworks and modern dev tools.",
     image: "/btcmp.jpg",
   },
   {
-    title: "Full Control",
+    title: "Robotics",
     description:
-      "From design elements to functionality, you have complete control to create a unique and personalized experience.",
-    image: "/btcmp.jpg",
+      "From circuit design to autonomous intelligence—engineer the future by bringing complex machines to life through hands-on robotics training.",
+    image: "/robotics.jpg",
   },
   {
-    title: "Powered By AI",
+    title: "Data Science",
     description:
-      "Elements to functionality, you have complete control to create a unique experience.",
-    image: "/btcmp.jpg",
+      "Transform raw information into strategic gold. Learn to uncover hidden patterns and drive decision-making with powerful data analytics.",
+    image: "/data.jpg",
   },
   {
-    title: "Seamless Integration",
+    title: "Cybersecurity",
     description:
-      "Easily integrate with your existing tools and workflows without any hassle.",
-    image: "/btcmp.jpg",
+      "Become the ultimate digital guardian. Learn to neutralize sophisticated threats and architect unbreakable defense systems for the modern web.",
+    image: "/img5.jpeg",
   },
   {
-    title: "Optimized Performance",
+    title: "AI and Machine Learning",
     description:
-      "Our programs are designed for speed and efficiency, giving you the best results.",
-    image: "/btcmp.jpg",
+      "Step into the vanguard of innovation. Architect intelligent systems that think, learn, and evolve using cutting-edge neural networks.",
+    image: "/ai.jpg",
   },
   {
-    title: "Expert Support",
+    title: "Mobile App Development",
     description:
-      "Get guidance and assistance from experts whenever you need it.",
-    image: "/btcmp.jpg",
+      "Build the apps that define tomorrow. Create seamless, high-impact experiences for iOS and Android that millions will love.",
+    image: "/mobile.jpg",
   },
 ];
 

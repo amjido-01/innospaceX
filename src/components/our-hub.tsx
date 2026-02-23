@@ -11,7 +11,7 @@ export default function OurHub() {
           ></div>
           <div className="rounded-2xl w-full h-[40%] bg-cover bg-center bg-no-repeat 
              overflow-hidden"
-            style={{ backgroundImage: "url('/img3.jpg')" }}
+            style={{ backgroundImage: "url('/img3.jpeg')" }}
           ></div>
         </div>
 
@@ -20,11 +20,11 @@ export default function OurHub() {
         <div className="col-span-2 row-span-1 gap-4 rounded flex justify-between items-center">
           <div className="border-2 rounded-2xl w-1/2 h-full bg-cover bg-center bg-no-repeat 
              overflow-hidden"
-            style={{ backgroundImage: "url('/img2.jpg')" }}
+            style={{ backgroundImage: "url('/img2.jpeg')" }}
           ></div>
           <div className="border-2 rounded-2xl w-1/2 h-full bg-cover bg-center bg-no-repeat 
              overflow-hidden"
-            style={{ backgroundImage: "url('/img4.jpg')" }}
+            style={{ backgroundImage: "url('/img4.jpeg')" }}
           ></div>
         </div>
 
@@ -33,25 +33,25 @@ export default function OurHub() {
 
           <div className="rounded-2xl w-full h-1/2 bg-cover bg-center bg-no-repeat 
              overflow-hidden"
-            style={{ backgroundImage: "url('/img5.jpg')" }}
+            style={{ backgroundImage: "url('/img5.jpeg')" }}
           ></div>
 
           <div className="rounded-2xl w-full h-1/2 bg-cover bg-center bg-no-repeat 
              overflow-hidden"
-            style={{ backgroundImage: "url('/img7.jpg')" }}
+            style={{ backgroundImage: "url('/img7.jpeg')" }}
           ></div>
         </div>
 
 
 
         <div className="rounded-2xl col-span-2 row-span-1 bg-cover bg-center bg-no-repeat overflow-hidden"
-          style={{ backgroundImage: "url('/img9.jpg')" }}
+          style={{ backgroundImage: "url('/img09.jpeg')" }}
         ></div>
         <div className="rounded-2xl col-span-2 row-span-1 bg-cover bg-center bg-no-repeat overflow-hidden"
-          style={{ backgroundImage: "url('/img8.jpg')" }}
+          style={{ backgroundImage: "url('/img8.jpeg')" }}
         ></div>
         <div className="rounded-2xl col-span-1 row-span-1 bg-cover bg-center bg-no-repeat overflow-hidden"
-          style={{ backgroundImage: "url('/img10.jpg')" }}
+          style={{ backgroundImage: "url('/img10.jpeg')" }}
         ></div>
       </div>
     </div>
