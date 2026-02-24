@@ -27,7 +27,7 @@ const members = [
   },
   {
     name: "Abdullatif Abdulkharim",
-    role: "Head of Acedamic",
+    role: "Head of Acedamy",
     avatar: "abdul.jpeg",
     link: "https://www.linkedin.com/in/abdullatif-abdulkarim-104397235/",
   },
