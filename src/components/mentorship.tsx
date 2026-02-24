@@ -1,8 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Link } from "@tanstack/react-router";
+import { WhatsAppModal } from "./whatsapp-modal";
+import { useState } from "react";
 
 export default function MentorshipSection() {
+   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <section className="max-w-6xl mx-auto px-4 py-12 space-y-10">
       {/* Top Section */}
@@ -18,13 +20,12 @@ export default function MentorshipSection() {
               guide you every step of the way to help you grow and succeed.
             </p>
             <Button
+            onClick={() => setIsModalOpen(true)}
               asChild
               size="lg"
-              className="px-[70px] mt-[78px] border-2 text-[22px] font-bold text-[#000000] border-[#000000] bg-white text-base"
+              className="px-[70px] cursor-pointer mt-[78px] border-2 text-[22px] hover:bg-[#ed994e] font-bold text-[#000000] border-[#000000] bg-white text-base"
             >
-              <Link to="/">
-                <span className="text-nowrap">Get Started</span>
-              </Link>
+              <span className="text-nowrap">Get Started</span>
             </Button>
           </div>
           {/* Image */}
@@ -44,7 +45,9 @@ export default function MentorshipSection() {
         <Card className="bg-[#3A7D7C] relative border-none rounded-2xl text-white">
           <CardContent className="p-10 flex flex-col justify-between h-full">
             <div className="text-center mb-[58px]">
-              <h3 className="text-[45px] leading-9 tracking[-4%] font-bold">Community of Innovators</h3>
+              <h3 className="text-[45px] leading-9 tracking[-4%] font-bold">
+                Community of Innovators
+              </h3>
               <p className="mt-4 text-[20px] leading-[27.5px]">
                 Join a growing network of students, creators, and startups
                 building solutions that matter.
@@ -53,12 +56,12 @@ export default function MentorshipSection() {
 
             <div className="absolute mt-[58px] bottom-0">
               <img
-              src="/img9.jpeg"
-              alt="Community working together"
-              width={500}
-              height={400}
-              className="rounded-t-2xl  w-[428px] h-[289px] object-cover"
-            />
+                src="/img9.jpeg"
+                alt="Community working together"
+                width={500}
+                height={400}
+                className="rounded-t-2xl  w-[428px] h-[289px] object-cover"
+              />
             </div>
           </CardContent>
         </Card>
@@ -67,25 +70,32 @@ export default function MentorshipSection() {
         <Card className="bg-[#256847] relative border-none rounded-2xl text-white">
           <CardContent className="p-10 flex flex-col justify-between h-full">
             <div className="text-center">
-              <h3 className="text-[45px] leading-9 tracking[-4%] font-bold">Practical Experience</h3>
+              <h3 className="text-[45px] leading-9 tracking[-4%] font-bold">
+                Practical Experience
+              </h3>
               <p className="mt-4 text-[20px] leading-[27.5px]">
                 Build hands-on projects that solve real challenges. Learn by
                 doing, not just watching.
               </p>
             </div>
 
-           <div>
-             <img
-              src="/img5.jpeg"
-              alt="Practical coding experience"
-              width={500}
-              height={400}
-              className="rounded-xl w-[428px] h-[289px] object-cover"
-            />
-           </div>
+            <div>
+              <img
+                src="/img5.jpeg"
+                alt="Practical coding experience"
+                width={500}
+                height={400}
+                className="rounded-xl w-[428px] h-[289px] object-cover"
+              />
+            </div>
           </CardContent>
         </Card>
       </div>
+       <WhatsAppModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        message="Hello! I want to get started with InnospaceX."
+      />
     </section>
   );
 }

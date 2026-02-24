@@ -43,6 +43,12 @@ const members = [
     avatar: "francis.jpeg",
     link: "https://www.linkedin.com/in/francis-olorunfemi-jacob",
   },
+  {
+    name: "Precious Nwachukwu",
+    role: "UI/UX Designer",
+    avatar: "precious.jpeg",
+    link: "https://www.linkedin.com/in/preciouschukwu",
+  },
 ];
 
 export default function Team() {

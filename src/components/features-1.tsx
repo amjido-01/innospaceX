@@ -1,6 +1,8 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Atom, MoveRight, Radio, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
+import { useState } from "react";
+import { WhatsAppModal } from "./whatsapp-modal";
 
 const badges = [
   { icon: Sparkles, label: "Physical classes" },
@@ -48,6 +50,10 @@ const cardData = [
 ];
 
 export default function Features() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedCard, setSelectedCard] = useState<(typeof cardData)[0] | null>(
+    null,
+  );
   return (
     <section className="border-t py16 md:py32 dark:bg-transparent">
       <div className="@container mx-auto max-w-6xl px-2">
@@ -104,7 +110,13 @@ export default function Features() {
                 </p>
 
                 <div className="mt-6">
-                  <Button className="bg-[#E68E40] hover:bg-[#d87e32] text-white flex items-center gap-2 px-5 py-2 border border-transparent">
+                  <Button
+                    onClick={() => {
+                      setSelectedCard(card);
+                      setIsModalOpen(true);
+                    }}
+                    className="bg-[#E68E40] hover:bg-[#d87e32] text-white flex items-center gap-2 px-5 py-2 border border-transparent"
+                  >
                     <MoveRight className="w-5 h-5 mt-1" strokeWidth={3} />
                     Learn More
                   </Button>
@@ -114,6 +126,11 @@ export default function Features() {
           ))}
         </div>
       </div>
+      <WhatsAppModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        message={`Hello! I want learn more about ${selectedCard?.title || "your programs"} at innospaceX.`}
+      />
     </section>
   );
 }

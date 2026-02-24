@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { Link } from "@tanstack/react-router";
 import { Rocket } from "lucide-react";
+import { WhatsAppModal } from "./whatsapp-modal";
+import { useState } from "react";
 
 export default function CallToAction() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <section
       className="relative py-16 md:py-32
@@ -25,17 +27,20 @@ export default function CallToAction() {
 
           <div className="mt-6 md:mt-12 flex flex-wrap justifycenter gap-4">
             <Button
-              asChild
+              onClick={() => setIsModalOpen(true)}
               size="lg"
               className="px-10 py-5 border-2 text-[22px] font-bold border-[#000000] bg-[#FFFFFF] text-base"
             >
-              <Link to="/">
                 <span className="text-nowrap text-[#121212]">Get Started</span>
-              </Link>
             </Button>
           </div>
         </div>
       </div>
+      <WhatsAppModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        message="Hello! I want to get started with InnospaceX."
+      />
     </section>
   );
 }

@@ -1,12 +1,15 @@
-import { Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { HeroHeader } from "./header";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { ProgressiveBlur } from "@/components/ui/progressive-blur";
 import { Sparkles } from "lucide-react";
 import { motion } from "motion/react";
+import { useState } from "react";
+import { WhatsAppModal } from "./whatsapp-modal";
 
 export default function HeroSection() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <>
       <HeroHeader />
@@ -98,15 +101,11 @@ export default function HeroSection() {
                   className="mt-7.75 md:mt-4.5 lg:mt-13 flex justify-start flexcol items-center mdjustify-center gap-2 sm:flex-row lg:justify-start"
                 >
                   <Button
-                    asChild
+                    onClick={() => setIsModalOpen(true)}
                     size="lg"
                     className="px-20 border-2 text-[22px] font-bold border-white bg-[#E68E40] text-base hover:bg-[#ed994e]"
                   >
-                    <Link to="/">
-                      <span className="text-nowrap text-white">
-                        Get Started
-                      </span>
-                    </Link>
+                    <span className="text-nowrap text-white">Get Started</span>
                   </Button>
                 </motion.div>
               </motion.div>
@@ -182,64 +181,64 @@ export default function HeroSection() {
                 <InfiniteSlider speedOnHover={10} speed={20} gap={50}>
                   <div className="flex">
                     <img
-                      className="mx-auto h-8 w-fit dark:invert"
+                      className="mx-auto h-15 w-fit dark:invert"
                       src="/asibiti.png"
                       alt="asibiti.ng Logo"
-                      height="30"
+                      height="50"
                       width="auto"
                     />
                   </div>
                   <div className="flex">
                     <img
-                      className="mx-auto h-10 w-fit dark:invert"
+                      className="mx-auto h-15 w-fit dark:invert"
                       src="/mata.png"
                       alt="mata a fasaha"
-                      height="40"
+                      height="50"
                       width="auto"
                     />
                   </div>
                   <div className="flex">
                     <img
-                      className="mx-auto h-10 w-fit dark:invert"
+                      className="mx-auto h-15 w-fit dark:invert"
                       src="/logo.png"
                       alt="innospacex"
-                      height="40"
+                      height="50"
                       width="auto"
                     />
                   </div>
                   <div className="flex">
                     <img
-                      className="mx-auto h-10 w-fit dark:invert"
+                      className="mx-auto h-15 w-fit dark:invert"
                       src="/bia.png"
                       alt="Bia"
-                      height="40"
+                      height="50"
                       width="auto"
                     />
                   </div>
                   <div className="flex">
                     <img
-                      className="mx-auto h-10 w-fit dark:invert"
+                      className="mx-auto h-15 w-fit dark:invert"
                       src="/wolf.png"
                       alt="Wolf auto mobile"
-                      height="40"
+                      height="50"
                       width="auto"
                     />
                   </div>
                   <div className="flex">
                     <img
-                      className="mx-auto h-10 w-fit dark:invert"
+                      className="mx-auto h-15 w-fit dark:invert"
                       src="/kk-l.jpeg"
                       alt="Laravel Logo"
-                      height="40"
+                      height="50"
                       width="auto"
                     />
                   </div>
                   <div className="flex">
                     <img
-                      className="mx-auto h-10 w-fit dark:invert"
+                      className="mx-auto h-15 w-fit dark:invert"
                       src="/learnoch-logo.png"
                       alt="Lilly Logo"
-                      height="40"
+                      height="50"
                       width="auto"
                     />
                   </div>
@@ -272,6 +271,11 @@ export default function HeroSection() {
           </div>
         </section>
       </main>
+      <WhatsAppModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        message="Hello! I want to get started with InnospaceX."
+      />
     </>
   );
 }
