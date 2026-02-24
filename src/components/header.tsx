@@ -19,7 +19,7 @@ export const HeroHeader = () => {
     <header>
       <nav
         data-state={menuState && "active"}
-        className="bg-background/50 fixed z-20 w-full border-b backdrop-blur-3xl"
+        className="bg-background/50 fixed z-50 w-full border-b backdrop-blur-3xl"
       >
         <div className="mx-auto max-w-6xl transition-all duration-300">
           {/* Grid layout for large screens */}

@@ -9,7 +9,7 @@ export const ServiceBox = ({
 }) => {
   return (
     <div className="rounded-2xl border bg-white p-6 shadow-sm hover:shadow-md transition-all">
-      <div className="w-12 h-12 border-2 bg[#E68E40] rounded-full flex items-center justify-center text-white text-xl">
+      <div className="w-12 h-12 border-2 bg[#E68E40] text-[#E68E40] rounded-full flex items-center justify-center textwhite text-xl">
         {icon}
       </div>
 

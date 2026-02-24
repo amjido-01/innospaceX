@@ -1,7 +1,6 @@
-import { Gemini, Replit, GooglePaLM, MagicUI } from "@/components/logos";
 import { Button } from "@/components/ui/button";
 import { Link } from "@tanstack/react-router";
-import { Sparkles } from "lucide-react";
+import { Binary, GraduationCap, LoaderPinwheel, School, Sparkles } from "lucide-react";
 import { ServiceBox } from "./service-box";
 export default function IntegrationsSection() {
   return (
@@ -46,25 +45,25 @@ export default function IntegrationsSection() {
         <div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <ServiceBox
-              icon={<Gemini />}
+              icon={<LoaderPinwheel />}
               name="Mentorship"
               description="A little description for it’s just a lorem ipsum yeah"
             />
 
             <ServiceBox
-              icon={<Replit />}
+              icon={<Binary /> }
               name="Software Development"
               description="A little description for it’s just a lorem ipsum yeah"
             />
 
             <ServiceBox
-              icon={<GooglePaLM />}
-              name="Academic"
+              icon={<GraduationCap />}
+              name="Academy"
               description="A little description for it’s just a lorem ipsum yeah"
             />
 
             <ServiceBox
-              icon={<MagicUI />}
+              icon={<School />}
               name="Tech Hub"
               description="A little description for it’s just a lorem ipsum yeah"
             />

@@ -49,7 +49,7 @@ export default function HeroSection() {
                     strokeWidth={2.5}
                   />
                   <span className="text-orange-400 font-medium text-sm">
-                    Welcome to InnovspaceX
+                    Welcome to InnospaceX
                   </span>
                 </motion.div>
 
@@ -122,7 +122,7 @@ export default function HeroSection() {
                   className="col-span-1 row-span-2"
                 >
                   <img
-                    src="/vr.jpg"
+                    src="/img3.jpeg"
                     alt="Person wearing VR headset with purple lighting"
                     className="w-75.25 sm:w-100 md:w-75.25 h-full object-cover rounded-3xl"
                   />
@@ -138,7 +138,7 @@ export default function HeroSection() {
                   className="col-span-1 row-span-1"
                 >
                   <img
-                    src="/team.jpg"
+                    src="/robotics.jpg"
                     alt="Overhead view of workspace with laptops and tech"
                     className="w-75.25 sm:w-100 md:w-75.25 h-full object-cover rounded-3xl"
                   />
@@ -154,7 +154,7 @@ export default function HeroSection() {
                   className="col-span-1 row-span-1"
                 >
                   <img
-                    src="/children.jpg"
+                    src="/sa.jpeg"
                     alt="People working together on tech project"
                     className="w-75.25 h-full sm:w-100 md:w-75.25 object-cover rounded-3xl"
                   />
@@ -179,71 +179,71 @@ export default function HeroSection() {
 
               {/* LOGO SLIDER CONTAINER */}
               <div className="relative py-6 md:w-[calc(100%-16rem)]">
-                <InfiniteSlider speedOnHover={20} speed={40} gap={90}>
+                <InfiniteSlider speedOnHover={10} speed={20} gap={50}>
                   <div className="flex">
                     <img
-                      className="mx-auto h-5 w-fit dark:invert"
+                      className="mx-auto h-8 w-fit dark:invert"
                       src="/asibiti.png"
                       alt="asibiti.ng Logo"
-                      height="20"
+                      height="30"
                       width="auto"
                     />
                   </div>
                   <div className="flex">
                     <img
-                      className="mx-auto h-4 w-fit dark:invert"
+                      className="mx-auto h-10 w-fit dark:invert"
                       src="/mata.png"
                       alt="mata a fasaha"
-                      height="16"
+                      height="40"
                       width="auto"
                     />
                   </div>
                   <div className="flex">
                     <img
-                      className="mx-auto h-4 w-fit dark:invert"
+                      className="mx-auto h-10 w-fit dark:invert"
                       src="/logo.png"
                       alt="innospacex"
-                      height="16"
+                      height="40"
                       width="auto"
                     />
                   </div>
                   <div className="flex">
                     <img
-                      className="mx-auto h-5 w-fit dark:invert"
-                      src="https://html.tailus.io/blocks/customers/nike.svg"
-                      alt="Nike Logo"
-                      height="20"
+                      className="mx-auto h-10 w-fit dark:invert"
+                      src="/bia.png"
+                      alt="Bia"
+                      height="40"
                       width="auto"
                     />
                   </div>
                   <div className="flex">
                     <img
-                      className="mx-auto h-5 w-fit dark:invert"
-                      src="https://html.tailus.io/blocks/customers/lemonsqueezy.svg"
-                      alt="Lemon Squeezy Logo"
-                      height="20"
+                      className="mx-auto h-10 w-fit dark:invert"
+                      src="/wolf.png"
+                      alt="Wolf auto mobile"
+                      height="40"
                       width="auto"
                     />
                   </div>
                   <div className="flex">
                     <img
-                      className="mx-auto h-4 w-fit dark:invert"
-                      src="https://html.tailus.io/blocks/customers/laravel.svg"
+                      className="mx-auto h-10 w-fit dark:invert"
+                      src="/kk-l.jpeg"
                       alt="Laravel Logo"
-                      height="16"
+                      height="40"
                       width="auto"
                     />
                   </div>
                   <div className="flex">
                     <img
-                      className="mx-auto h-7 w-fit dark:invert"
-                      src="https://html.tailus.io/blocks/customers/lilly.svg"
+                      className="mx-auto h-10 w-fit dark:invert"
+                      src="/learnoch-logo.png"
                       alt="Lilly Logo"
-                      height="28"
+                      height="40"
                       width="auto"
                     />
                   </div>
-                  <div className="flex">
+                  {/* <div className="flex">
                     <img
                       className="mx-auto h-6 w-fit dark:invert"
                       src="https://html.tailus.io/blocks/customers/openai.svg"
@@ -251,7 +251,7 @@ export default function HeroSection() {
                       height="24"
                       width="auto"
                     />
-                  </div>
+                  </div> */}
                 </InfiniteSlider>
 
                 {/* GRADIENT BLUR EDGES */}

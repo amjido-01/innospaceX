@@ -30,7 +30,7 @@ export default function MentorshipSection() {
           {/* Image */}
           <div className="self-end -mb-6">
             <img
-              src="/guide.jpg"
+              src="/img2.jpeg"
               alt="Mentor guiding student"
               className="rounded-t-2xl w-full h-auto object-cover"
             />
@@ -53,7 +53,7 @@ export default function MentorshipSection() {
 
             <div className="absolute mt-[58px] bottom-0">
               <img
-              src="/community.jpg"
+              src="/img9.jpeg"
               alt="Community working together"
               width={500}
               height={400}
@@ -76,7 +76,7 @@ export default function MentorshipSection() {
 
            <div>
              <img
-              src="/practical.jpg"
+              src="/img5.jpeg"
               alt="Practical coding experience"
               width={500}
               height={400}

@@ -15,7 +15,7 @@ export default function ContentSection() {
         </div>
         <img
           className="rounded-(--radius) h-137.5 object-cover mx-auto w-262.5"
-          src="/who.jpg"
+          src="/d1.jpeg"
           alt="team image"
           height=""
           width=""
