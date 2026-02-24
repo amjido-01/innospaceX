@@ -27,22 +27,22 @@ export function AnimatedTestimonialsDemo() {
     },
     {
       quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
-      src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "My experience at InnospaceX has been impactful. I gained practical skills, built confidence, and grew academically and professionally in a supportive environment.",
+      name: "Zainab Ali sadi",
+      designation: "SIWES Student",
+      src: "zainab.jpeg",
     },
     {
       quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "In InnoSpaceX I learn networking under networking we done Cisco packet Tracer, the we Encryption and Decryption and Window even if viewer and the end we start Kali Linux.",
+      name: "Bilkisu Lawan",
+      designation: "SIWES Student",
+      src: "bilkisu.jpeg",
     },
   ];
   return (
     <div className="mt-16 bg-[#D7F0F4CC]">
-      <AnimatedTestimonials testimonials={testimonials} />
+      <AnimatedTestimonials testimonials={testimonials} autoplay={true} />
     </div>
   );
 }

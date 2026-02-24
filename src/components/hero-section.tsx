@@ -103,7 +103,7 @@ export default function HeroSection() {
                   <Button
                     onClick={() => setIsModalOpen(true)}
                     size="lg"
-                    className="px-20 border-2 text-[22px] font-bold border-white bg-[#E68E40] text-base hover:bg-[#ed994e]"
+                    className="px-20 border-2 text-[22px] cursor-pointer font-bold border-white bg-[#E68E40] text-base hover:bg-[#ed994e]"
                   >
                     <span className="text-nowrap text-white">Get Started</span>
                   </Button>

@@ -1,10 +1,10 @@
 "use client";
- 
+
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "motion/react";
- 
+
 import { useEffect, useState } from "react";
- 
+
 type Testimonial = {
   quote: string;
   name: string;
@@ -19,32 +19,37 @@ export const AnimatedTestimonials = ({
   autoplay?: boolean;
 }) => {
   const [active, setActive] = useState(0);
- 
+  const [isPaused, setIsPaused] = useState(false);
+
   const handleNext = () => {
     setActive((prev) => (prev + 1) % testimonials.length);
   };
- 
+
   const handlePrev = () => {
     setActive((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   };
- 
+
   const isActive = (index: number) => {
     return index === active;
   };
- 
+
   useEffect(() => {
-    if (autoplay) {
+    if (autoplay && !isPaused) {
       const interval = setInterval(handleNext, 5000);
       return () => clearInterval(interval);
     }
-  }, [autoplay]);
- 
+  }, [autoplay, isPaused]);
+
   const randomRotateY = () => {
     return Math.floor(Math.random() * 21) - 10;
   };
   return (
     <div className="mx-auto max-w-sm px-4 py-25 font-sans antialiased md:max-w-5xl md:px-8 lg:px-12">
-      <div className="relative grid grid-cols-1 gap-20 md:grid-cols-2">
+      <div
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+        className="relative grid grid-cols-1 gap-20 md:grid-cols-2"
+      >
         <div>
           <div className="relative h-80 w-full">
             <AnimatePresence>
@@ -118,7 +123,7 @@ export const AnimatedTestimonials = ({
             <p className="text-sm text-gray-500 dark:text-neutral-500">
               {testimonials[active].designation}
             </p>
-            <motion.p className="mt-8 text-[32px] leading-10.5 font-medium text-[#090914]">
+            <motion.p className="mt-8 text-[20px] leading10.5 font-medium text-[#090914]">
               {testimonials[active].quote.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
