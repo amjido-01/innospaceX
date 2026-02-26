@@ -16,10 +16,15 @@ export default function HeroSection() {
       <main className="overflow-x-hidden">
         <section className="mt-18">
           <div
-            className="pb-24 pt-12 md:pb-32 lg:py-18 bg-linear-to-br from-[#d9eaf7] via-[#e9eff8] to-[#faefe7]
-"
+            className="pb-24 pt-12 md:pb-32 lg:py-18"
+            style={{
+              backgroundImage: `url('/herobg.svg')`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
           >
-            <div className="relative mx-auto px-2 md:px-0 flex max-w-6xl flex-col md:flex-row px6 lgblock">
+            <div className="px-2 md:px-0 md:flex-row px6 lgblock relative mx-auto max-w-6xl flex flex-col md:flex-row items-stretch">
               <motion.div
                 initial="hidden"
                 whileInView="visible"
@@ -45,7 +50,7 @@ export default function HeroSection() {
                       transition: { duration: 0.5, ease: "easeOut" },
                     },
                   }}
-                  className="inline-flex items-center gap-2 px-4 py-2 border border-orange-300 rounded-full bg-white w-fit"
+                  className="inline-flex items-center gap-2 px-4 py-2 border border-orange-300 rounded-full w-fit"
                 >
                   <Sparkles
                     className="w-4 h-4 text-orange-400"
@@ -110,7 +115,7 @@ export default function HeroSection() {
                 </motion.div>
               </motion.div>
 
-              <div className="mt-7.5 md:mt-0 grid grid-cols-2 border2 gap-3 grid-rows-2 h-fit md:h-full">
+              <div className="mt-7.5 md:mt-0 grid grid-cols-2 border2 gap-3 grid-rows-2 md:w-1/2">
                 {/* Top left - VR image */}
                 <motion.div
                   initial={{ opacity: 0, scale: 0.9, filter: "blur(10px)" }}

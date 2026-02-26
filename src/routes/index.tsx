@@ -18,7 +18,14 @@ function App() {
   return (
     <>
       <HeroSection />
-      <div className="bg-linear-to-r from-[#FFE5D1] to-[#D3EAF7]">
+      <div
+        style={{
+          backgroundImage: `url('/servicebg.svg')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <Features />
         <IntegrationsSection />
       </div>

@@ -49,6 +49,12 @@ const members = [
     avatar: "precious.jpeg",
     link: "https://www.linkedin.com/in/preciouschukwu",
   },
+  {
+    name: "Muhammad Niimatullah",
+    role: "Product Designer",
+    avatar: "niima.jpeg",
+    link: "https://www.linkedin.com/in/muhammad-niimatullah-1776a9241",
+  },
 ];
 
 export default function Team() {

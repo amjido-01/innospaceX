@@ -39,6 +39,34 @@ export function AnimatedTestimonialsDemo() {
       designation: "SIWES Student",
       src: "bilkisu.jpeg",
     },
+    {
+      quote:
+        "InnospaceX = awesome learning experience, dope trainers, and a collab vibe! 😊",
+      name: "Abdulrauf Naseer Ahmed",
+      designation: "SIWES Student",
+      src: "ab.jpeg",
+    },
+    {
+      quote:
+        "My experience in innovation space X is on the bootstrap. It is all about short cut way to doing your code",
+      name: "Muhammad Ibrahim kani",
+      designation: "SIWES Student",
+      src: "muhd.jpeg",
+    },
+    {
+      quote:
+        "My SIWES at InnospaceX was practical and impactful. I gained real-world web development experience with great support from the team, and I’m glad I chose them.",
+      name: "Zainab Ahmad Sa'id",
+      designation: "SIWES Student",
+      src: "zee.jpeg",
+    },
+    {
+      quote:
+        "I’m happy to be doing my SIWES at InnospaceX. The experience has been engaging, helping me gain practical skills and improve professionally.",
+      name: "Maryam Muhammad Yusuf",
+      designation: "SIWES Student",
+      src: "fati.jpeg",
+    },
   ];
   return (
     <div className="mt-16 bg-[#D7F0F4CC]">
