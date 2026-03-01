@@ -7,7 +7,7 @@ export default function OurHub() {
           <div
             className="border-2 w-full h-[60%] rounded-2xl bg-cover bg-center bg-no-repeat 
              overflow-hidden"
-            style={{ backgroundImage: "url('/img1.jpg')" }}
+            style={{ backgroundImage: "url('/khalil.jpeg')" }}
           ></div>
           <div className="rounded-2xl w-full h-[40%] bg-cover bg-center bg-no-repeat 
              overflow-hidden"

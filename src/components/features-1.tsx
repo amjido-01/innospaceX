@@ -15,13 +15,13 @@ const cardData = [
     title: "Web development",
     description:
       "Master the art of building high-performance, responsive websites using the latest industry-standard frameworks and modern dev tools.",
-    image: "/btcmp.jpg",
+    image: "/web-d.jpeg",
   },
   {
     title: "Robotics",
     description:
       "From circuit design to autonomous intelligence—engineer the future by bringing complex machines to life through hands-on robotics training.",
-    image: "/robotics.jpg",
+    image: "/robs.jpeg",
   },
   {
     title: "Data Science",

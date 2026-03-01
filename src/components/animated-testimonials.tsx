@@ -67,6 +67,27 @@ export function AnimatedTestimonialsDemo() {
       designation: "SIWES Student",
       src: "fati.jpeg",
     },
+    {
+      quote:
+        "My name is Muhammad Muhammad Makama. Here at Innovation SpaceX, in the Cyber Security department, we are learning networking. So far, we have completed Cisco Packet Tracer and worked with Event Viewer, and we are currently working with Kali Linux.",
+      name: "Muhammad Muhammad Makama",
+      designation: "SIWES Student",
+      src: "makama.jpeg",
+    },
+    {
+      quote:
+        "In InnoSpaceX I learn networking under networking we done Cisco packet Tracer, the we Encryption and Decryption and Window event viewer and the end we start Kali Linux",
+      name: "Fatima Abubakar Imam",
+      designation: "Cyber Security Student",
+      src: "fatima.jpeg",
+    },
+    {
+      quote:
+        "In InnoSpaceX I learn networking under networking we done Cisco packet Tracer, the we Encryption and Decryption and Window event viewer and the end we start Kali Linux",
+      name: "Suleman Musa Imam",
+      designation: "Cyber Security Student",
+      src: "sule.jpeg",
+    },
   ];
   return (
     <div className="mt-16 bg-[#D7F0F4CC]">

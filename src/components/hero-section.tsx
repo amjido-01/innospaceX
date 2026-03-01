@@ -142,7 +142,7 @@ export default function HeroSection() {
                   className="col-span-1 row-span-1"
                 >
                   <img
-                    src="/robotics.jpg"
+                    src="/khalil.jpeg"
                     alt="Overhead view of workspace with laptops and tech"
                     className="w-75.25 sm:w-100 md:w-75.25 h-full object-cover rounded-3xl"
                   />
