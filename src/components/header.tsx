@@ -23,7 +23,7 @@ export const HeroHeader = () => {
       >
         <div className="mx-auto max-w-6xl transition-all duration-300">
           {/* Grid layout for large screens */}
-          <div className="relative flex flex-wrap items-center justify-between py-3 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-center lg:py-4">
+          <div className="relative flex flex-wrap items-center justify-between py-2 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-center lg:py-2">
             {/* LEFT COLUMN — Logo */}
             <div className="flex items-center w-full px-2 justify-between lg:justify-start">
               <Link
@@ -33,8 +33,8 @@ export const HeroHeader = () => {
               >
                 <img
                   src="/logo.png"
-                  alt="Tailark Logo"
-                  className="h-10 w-auto"
+                  alt="innospaceX  Logo"
+                  className="h-20 w-auto"
                 />
               </Link>
 
@@ -60,7 +60,7 @@ export const HeroHeader = () => {
                 asChild
                 variant="link"
                 size="lg"
-                className="text-[#E68E40] font-bold text-[18px] p-0 leading-[100%] flex items-center gap-2"
+                className="text-[#E68E40] font-bold text-[20px] p-0 leading-[100%] flex items-center gap-2 hover:gap-4 transition-all duration-300"
               >
                 <Link to="/contact">
                   <MoveRight className="text-[#E68E40] w-5 h-5" strokeWidth={3} />
